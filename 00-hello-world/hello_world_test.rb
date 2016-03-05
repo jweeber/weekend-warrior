@@ -5,12 +5,14 @@ require_relative 'hello_world'
 
 class HelloWorldTest < Minitest::Test
   def test_no_name
+    #expect the string 'hello world!' when given the method hello_world
     assert_equal 'Hello, World!', hello_world, <<-MSG
     When given no name, it should greet the world!
     MSG
   end
 
   def test_sample_name
+    # tells ruby to skip test
     assert_equal 'Hello, Alice!', hello_world('Alice'), <<-MSG
     When given "Alice" it should greet Alice!
     MSG
