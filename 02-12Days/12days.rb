@@ -2,7 +2,7 @@
 class Xmas
 
   def self.gifts(gift_num)
-    gifts = [
+    gifts = [       # could put this in a constant
       "a partridge in a pear tree",
       "two turtle doves",
       "three french hens",
@@ -32,7 +32,7 @@ class Xmas
   end
 
   def self.verse(verse_num)
-    days =[
+    days =[           # could put this in a constant
       "first",
       "second",
       "third",
@@ -53,7 +53,7 @@ class Xmas
     first_line = "On the #{current_day} day of Christmas my true love gave to me\n"
     gift_line = self.gifts(verse_num).join("\n")
     return first_line + gift_line
-    
+
   end
 
   def self.sing
